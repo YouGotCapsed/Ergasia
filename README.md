@@ -7,25 +7,25 @@ class BankAccount:
     def deposit(self, amount):
         if amount > 0:
             self.balance += amount
-            print(f"Κατάθεση {amount}€ επιτυχής.")
+            print(f"Katathesi {amount} € epituxhs.")
         else:
-            print("Μη έγκυρο ποσό κατάθεσης.")
+            print("Mh egkuro poso katathesis.")
 
     def withdraw(self, amount):
         if amount <= self.balance:
             self.balance -= amount
-            print(f"Ανάληψη {amount}€ επιτυχής.")
+            print(f"Analhpsh {amount}€ epituxhs.")
         else:
-            print("Ανεπαρκές υπόλοιπο.")
+            print("Aneparkses ypoloipo.")
 
     def show_balance(self):
-        print(f"Ιδιοκτήτης: {self.owner}")
-        print(f"Υπόλοιπο: {self.balance}€")
+        print(f"Owner: {self.owner}")
+        print(f"Balance: {self.balance}€")
 
 
 
-account1 = BankAccount("Γιώργος", 500)
-account2 = BankAccount("Ελένη", 1000)
+account1 = BankAccount("Giwrgos", 500)
+account2 = BankAccount("Elenh", 1000)
 
 
 account1.deposit(200)
